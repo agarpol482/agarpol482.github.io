@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(172, 236, 228);
+}
+    
+form fieldset {
+    float: left;
+    width: 35%;
+}
+
