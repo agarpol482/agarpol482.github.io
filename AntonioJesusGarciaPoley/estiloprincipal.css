@@ -1,0 +1,134 @@
+h1 {
+    color: rgb(81, 150, 78);
+}
+
+body {
+    width: 100%;
+    background-color: rgb(209, 255, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+.enlace {
+    text-align: center;
+    border: solid 2px rgb(233, 236, 8) ;
+    flex-grow: 1;
+    padding: 1em;
+    color: rgb(47, 136, 6);
+}
+
+.enlace:hover{
+    font-weight: bolder;
+}
+.cuerpoPagina {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+
+}
+
+.zonaArticulosGrande {
+    /* Combinando las 2 siguientes propiedades consigo distribuir el tamaño de esta clase
+    Importante poner el flex-basis: 0 para que no cree espacios raros */
+    flex-grow: 2;
+    flex-basis: 0;
+    margin: .4em;
+}
+
+.columnaArticulosPequeños {
+    /* Combinando las 2 siguientes propiedades consigo distribuir el tamaño de esta clase
+    Importante poner el flex-basis: 0 para que no cree espacios raros*/
+    flex-grow: 3;
+    flex-basis: 0;
+    margin: .4em;
+}
+
+.articuloIzquierda {
+    width: auto;
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    align-content: flex-start;
+
+    padding: 1em;
+    margin: .5em;
+}
+
+.textos {
+    
+    flex-grow: 1;
+    flex-basis: 0;
+
+    padding-right: 1em;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:stretch;
+    
+}
+
+.imagenArticulo { 
+   /* flex-grow: 1;
+    flex-basis: 0;
+*/
+    width: 250px;;
+    
+ }
+
+.imagenArticulo img {
+   
+    width: 300px;
+    height: 200px;
+   
+
+
+    }
+
+.articuloPequeño {
+    padding: 1em;
+    margin: .5em;
+ }
+
+.imagenArticuloPequeño img {
+    width: 300px;
+    height: 200px;
+}
+
+.tituloArticulo {
+    flex-grow: 1;
+}
+
+.TextoArticulo {
+    flex-grow: 1;
+/*width: auto;*/
+
+}
+
+.tituloArticulo, .tituloArticuloPequeño {
+    font-weight: bold;
+    font-size: large;
+}
